@@ -1,3 +1,6 @@
+import java.lang.Math.abs
+import java.lang.Math.round
+
 fun main(args: Array<String>) {
     val num1 = 15
     val num2 = 10
@@ -16,5 +19,13 @@ fun main(args: Array<String>) {
 
     val remainder = num1.rem(num2)
     println("remainder=$remainder")
+
+
+    val neg = -152.4
+    val absolute = abs(neg)
+
+    println ("absolute = $absolute")
+    println ("rounded = ${round(absolute)}")
+
 
 }
