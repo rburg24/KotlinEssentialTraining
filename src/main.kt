@@ -1,14 +1,15 @@
+import MathLib.Companion.addValues
+import MathLib.Companion.getInput
+
 fun main(args: Array<String>) {
     try {
-        print("Number 1: ")
-        val string1: String? = readLine()
-        val number1 = string1!!.toDouble()
+        val number1 = getInput("Number 1: ")
 
-        print("Number 2: ")
-        val string2 = readLine()
-        val number2 = string2!!.toDouble()
+        val number2 = getInput("Number 2: ")
+
 
         val result: Double? = addValues(number1, number2)
+
         println("The answer is $result")
     } catch (e: NumberFormatException) {
         println("${e.message} is not a number")
@@ -17,4 +18,6 @@ fun main(args: Array<String>) {
     }
 }
 
-fun addValues(number1: Double, number2: Double) = number1 + number2
+
+
+
